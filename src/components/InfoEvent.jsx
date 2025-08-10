@@ -62,7 +62,7 @@ const InfoEvent = () => {
               <Typography 
   variant="body1" 
   color="text.secondary" 
-  sx={{mb: 1, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5em" }, color: "#536449" }}
+  sx={{mb: 1, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5em" }, color: "#536449",   fontWeight: "bold", }}
 >
   17 de Enero de 2026 
 </Typography>
@@ -70,7 +70,7 @@ const InfoEvent = () => {
 <Typography 
   variant="body1" 
   color="text.secondary" 
-  sx={{ mb: 1, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5rem" },  color: "#536449"}}
+  sx={{ mb: 1, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5rem" },  color: "#536449",   fontWeight: "bold",}}
 >
   19:30 hs.
 </Typography>
@@ -78,7 +78,7 @@ const InfoEvent = () => {
 <Typography 
   variant="body1" 
   color="text.secondary" 
-  sx={{ mb: 4, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5em" } ,  color: "#536449"}}
+  sx={{ mb: 4, fontFamily: "'Prata', serif", fontSize: { xs: "0.9rem", md: "1.5em" } ,  color: "#536449",   fontWeight: "bold",}}
 >
   Salon Del Vergel - C. Simon Bolivar, M5600 | San Rafael, Mendoza 
 </Typography>
