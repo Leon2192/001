@@ -70,7 +70,7 @@ const SuggestSong = () => {
 
          <Button
   component="a"
-  href="https://docs.google.com/forms/d/e/1FAIpQLSf59-LbsKfKsKMH-d9Gt7q6xfSue8wgy4ZEyzUCDb4C9w2Qcg/viewform"
+  href="https://docs.google.com/forms/d/e/1FAIpQLSfOzT7khNhwLWqsJlDiYmpN9TtHsrngA5GsCaWBBmnar0fiEw/viewform"
   target="_blank"
   rel="noopener noreferrer"
   variant="contained"
@@ -81,10 +81,23 @@ const SuggestSong = () => {
     fontFamily: "'Prata'",
     color: "#ffffff",
     boxShadow: "none",
+    animation: "bounceBtn 2s infinite", 
+    transition: "all 0.3s ease", 
+    "@keyframes bounceBtn": {
+      "0%, 20%, 50%, 80%, 100%": {
+        transform: "translateY(0)",
+      },
+      "40%": {
+        transform: "translateY(-6px)",
+      },
+      "60%": {
+        transform: "translateY(-3px)",
+      },
+    },
     "&:hover": {
       backgroundColor: "#fff",
-      border: "2px solid #d1c4e9",
-      color: "#4a148c",
+      color: "#536449",
+      transform: "scale(1.05)", // efecto de agrandar en hover
     },
   }}
 >

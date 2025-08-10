@@ -33,7 +33,7 @@ const Dresscode = () => {
         >
             <Box
   component="img"
-  src="/images/001/dresscodeicon.gif"
+  src="/images/001/dress1.gif"
   alt="Ceremonia"
   sx={{
     width: 125,       
@@ -48,7 +48,7 @@ const Dresscode = () => {
               fontFamily: "'Luxurious Script'",
               fontSize: { xs: "2.5rem", md: "3.5rem" },
               color: "#536449",
-              fontWeight: "bold",
+              fontWeight: "semibold",
               mb: 1,
             }}
           >

@@ -12,6 +12,7 @@ import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import ButtonLinks from "./ButtonLinks/ButtonLInks";
 
 const Gift = () => {
   const [open, setOpen] = useState(false);
@@ -69,25 +70,12 @@ const Gift = () => {
             Pero si querés hacernos un obsequio...
           </Typography>
 
-          <Button
-            variant="contained"
-            onClick={handleOpen}
-            sx={{
-              borderRadius: 999,
-              px: 4,
-              backgroundColor: "#536449",
-              fontFamily: "'Prata'",
-              color: "#ffffff",
-              boxShadow: "none",
-              "&:hover": {
-                backgroundColor: "#fff",
-                border: "2px solid #d1c4e9",
-                color: "#4a148c",
-              },
-            }}
-          >
-            Ver datos bancarios
-          </Button>
+         
+          <ButtonLinks
+          onClick={handleOpen}
+  label="Ver datos Bancarios"
+  newTab
+/>
         </Box>
       </Fade>
 
@@ -164,30 +152,21 @@ const Gift = () => {
               mb: 1,
               fontWeight:600
             }}>
-              Nombre del Titular: Nombre Apellido
+              Nombre del Titular: Carla Agustina Martinez
               <br />
               CBU: 0720126088000037692690
               <br />
               Alias: casamiento.sanycar
               <br />
-              DNI: 32200552
+              DNI: 40.003.711
               <br />
-              Banco Galicia
+              Banco Santander 
             </Typography>
 
    
           </Box>
         </Fade>
       </Modal>
-
-      <Divider
-        sx={{
-          mt: 6,
-          width: "40px",
-          borderBottomWidth: 2,
-          borderColor: "#ccc",
-        }}
-      />
     </Box>
   );
 };

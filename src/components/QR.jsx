@@ -1,5 +1,6 @@
 import { Box, Typography, Fade , Divider} from "@mui/material";
 import { useInView } from "react-intersection-observer";
+import ButtonLinks from "./ButtonLinks/ButtonLInks";
 
 const Qr = () => {
   const { ref, inView } = useInView({
@@ -33,7 +34,7 @@ const Qr = () => {
           <Box display="flex" justifyContent="center" mb={2}>
             <Box
               component="img"
-              src="/images/qr.avif"
+              src="/images/qr-logo.png"
               alt="Código QR"
               sx={{
                 width: 200,
@@ -82,32 +83,18 @@ const Qr = () => {
 <Box mt={2}>
   <Box
     component="a"
-    href="https://photos.google.com/share/AF1QipNwXlKkqnFwICsazvslEhyALB1PXHjOlJuQsHJo3Hg5PwnWxHHvINJHvFzfo1IfSA?pli=1&key=QnhKTHJkeFJPM1BUbURuaVVDSHpWd1JfQXlMbHhB"
+    href="https://photos.app.goo.gl/irENLs3fg7bGSJ1m6"
     target="_blank"
     rel="noopener noreferrer"
     sx={{ textDecoration: "none" }}
   >
-    <Box
-      component="button"
-      sx={{
-      
-        color: "#ffffff",
-        px: 3,
-        py: 1,
-        borderRadius: "999px",
-        fontSize: "1rem",
-        fontWeight: 500,
-        backgroundColor: "#536449",
-        fontFamily: "'Prata'",
-        cursor: "pointer",
-        transition: "all 0.3s ease",
-        "&:hover": {
-          backgroundColor: "#25D36622",
-        },
-      }}
-    >
-      Ir al álbum
-    </Box>
+    
+<ButtonLinks
+  label="Ir Al Album"
+  href="https://photos.app.goo.gl/irENLs3fg7bGSJ1m6"
+  newTab
+/>
+
   </Box>
 </Box>
 

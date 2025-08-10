@@ -7,12 +7,11 @@ import Countdown from "./components/CountDown/CountDownPremium";
 import InfoEvent from "./components/InfoEvent";
 import Gift from "./components/Gift";
 import Confirm from "./components/Confirm";
-import Footer from "./components/Footer";
 import Dresscode from "./components/Dresscode";
 import SuggestSong from "./components/SugerirCancion";
 import Qr from "./components/QR";
+import Thanks from "./components/Thanks";
 
-// Componente Loader
 function Loader() {
   return (
     <Box
@@ -24,7 +23,7 @@ function Loader() {
         justifyContent: "center",
         flexDirection: "column",
         gap: 2,
-        background: "#ffffff", // fondo oscuro
+        background: "#ffffff",
         color: "#fff",
       }}
     >
@@ -68,7 +67,7 @@ function App() {
       <Confirm />
       <Dresscode />
       <SuggestSong />
-      <Footer />
+    <Thanks />
     </>
   );
 }

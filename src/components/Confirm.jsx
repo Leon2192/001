@@ -1,4 +1,5 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import ButtonLinks from "./ButtonLinks/ButtonLInks";
 
 const Confirm = () => {
   return (
@@ -7,7 +8,7 @@ const Confirm = () => {
         minHeight: "40vh",
         py: 8,
         px: 2,
-        backgroundColor: "#F3F1F2", // celeste pastel claro
+        backgroundColor: "#F3F1F2",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -15,56 +16,54 @@ const Confirm = () => {
         textAlign: "center",
       }}
     >
-      {/* Título principal cursiva */}
-      <Typography
-        variant="h4"
-        sx={{
-          fontFamily: "'Luxurious Script'",
-              fontSize: { xs: "2.5rem", md: "3.5rem" },
-              color: "#536449",
-          fontWeight: "bold",
-          mb: 2,
-        }}
-      >
-        Confirmación de asistencia
-      </Typography>
+      {/* Contenedor interno */}
+      <Box>
+        {/* Icono animado */}
+        <Box
+          component="img"
+          src="/images/001/confirm.gif"
+          alt="Ceremonia"
+          sx={{
+            width: 125,
+            height: 125,
+            mb: 1,
+          }}
+        />
 
-      {/* Subtítulo más pequeño */}
-      <Typography
-        variant="body1"
-        sx={{
-          fontFamily: "'Prata'",
-          fontSize: { xs: "1.2rem", md: "1.5rem" },
-          color: "#536449",
-          mb: 4,
-        }}
-      >
-        Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!
-      </Typography>
+        {/* Título principal cursiva */}
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "'Luxurious Script'",
+            fontSize: { xs: "2.5rem", md: "3.5rem" },
+            color: "#536449",
+            fontWeight: "semibold",
+            mb: 2,
+          }}
+        >
+          Confirmación de asistencia
+        </Typography>
 
-      {/* Botón */}
-      <Button
-        component="a"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSelY0QMb2Pdi7bOb19tFv-Q42qepyMiIHq9qaPUBfGh_Qr8Lw/viewform?fbzx=4030668355714172330"
-        target="_blank"
-        rel="noopener noreferrer"
-        variant="contained"
-        sx={{
-          borderRadius: 999,
-          px: 4,
-          backgroundColor: "#536449",
-          fontFamily: "'Prata'",
-          color: "#ffffff",
-          boxShadow: "none",
-          "&:hover": {
-            backgroundColor: "#fff",
-            border: "2px solid #b2ebf2",
-            color: "#004d40",
-          },
-        }}
-      >
-        Confirmar asistencia
-      </Button>
+        {/* Subtítulo más pequeño */}
+        <Typography
+          variant="body1"
+          sx={{
+            fontFamily: "'Prata'",
+            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            color: "#536449",
+            mb: 4,
+          }}
+        >
+          Esperamos que seas parte de esta gran celebración. ¡Confírmanos tu asistencia!
+        </Typography>
+
+        {/* Botón */}
+        <ButtonLinks
+          label="Confirmar Asistencia"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScxgDT68F2PwJIK1nRWFMeNmR_ZdwZzkcnVCX5l8q3i5-1L-A/viewform?usp=header"
+          newTab
+        />
+      </Box>
     </Box>
   );
 };
