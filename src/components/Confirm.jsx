@@ -8,7 +8,7 @@ const Confirm = () => {
         minHeight: "40vh",
         py: 8,
         px: 2,
-        backgroundColor: "#F3F1F2",
+        backgroundColor: "#BECCB7",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
