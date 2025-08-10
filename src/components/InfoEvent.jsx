@@ -86,7 +86,7 @@ const InfoEvent = () => {
  
 <ButtonLinks
   label="Como llegar"
-  href="https://www.google.com/maps/place/Sal%C3%B3n+Del+Vergel/@-33.7112176,-69.7860153,8z/data=!4m15!..."
+  href="https://www.google.com/maps/place/Sal%C3%B3n+Del+Vergel/@-34.6527046,-68.3368275,15z/data=!3m1!4b1!4m9!1m2!2m1!1ssalon+del+vergel!3m5!1s0x9679a9dcc63f9671:0x3f7e773b005f1a2b!8m2!3d-34.652706!4d-68.318395!16s%2Fg%2F11tszfz8gw?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
   newTab
 />
             </Box>
