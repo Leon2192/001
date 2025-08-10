@@ -61,7 +61,7 @@ const Gift = () => {
               fontFamily: "'Prata'",
               fontSize: { xs: "1.2rem", md: "2rem" },
               color: "#536449",
-              fontWeight: "bold",
+              fontWeight: "semibold",
               maxWidth: 600,
               mb: 4,
             }}
