@@ -12,6 +12,7 @@ import SuggestSong from "./components/SugerirCancion";
 import Qr from "./components/QR";
 import Thanks from "./components/Thanks";
 
+
 function Loader() {
   return (
     <Box
@@ -29,7 +30,7 @@ function Loader() {
     >
       <Box
         component="img"
-        src="/images/logo.png"
+        src="/images/logo2.jpeg"
         alt="Logo"
         sx={{
           width: 175,
