@@ -72,7 +72,7 @@ const Dresscode = () => {
 fontWeight:700,
     }}
   >
-    No blanco, crema ni nude
+    No blanco, crema, ni nude.
   </Box>
   <br />
   (La novia tiene la exclusividad)
